@@ -25,16 +25,21 @@ class ViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
 
+    @IBAction func addRowSection1ButtonPressed(_ sender: UIButton) {
+        numberOfRowsInSection1 += 1
+    }
+    @IBAction func addSectionButtonPressed(_ sender: UIButton) {
+        numberOfSections += 1
+    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return numberOfRowsInSection1
     }
-   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        return cell
-    }
+
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return numberOfSections
     }
 }
 
