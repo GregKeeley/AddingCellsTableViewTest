@@ -15,6 +15,10 @@ class ViewController: UITableViewController {
     @IBOutlet weak var deleteLastNameButton: UIButton!
     @IBOutlet weak var deleteNickNameButton: UIButton!
     @IBOutlet weak var deleteMiddleNameButton: UIButton!
+    @IBOutlet weak var addAddressButton: UIButton!
+    @IBOutlet weak var homeAddressDeleteButton: UIButton!
+    @IBOutlet weak var workAddressDeleteButton: UIButton!
+    @IBOutlet weak var alternateAddressDeleteButton: UIButton!
     
     var numberOfSections = 1 {
         didSet {
@@ -29,12 +33,16 @@ class ViewController: UITableViewController {
             } else {
                 addNameButton.isEnabled = true
             }
-            print(numberOfRowsInSection1)
-//            tableView.reloadData()
         }
     }
     var numberOfRowsInSection2 = 1 {
         didSet {
+            print("section2 rows: \(numberOfRowsInSection2)")
+            if numberOfRowsInSection2 == 16 {
+                addAddressButton.isEnabled = false
+            } else {
+                addAddressButton.isEnabled = true
+            }
         }
     }
     var numberOfRowsInSection3 = 1 {
@@ -57,6 +65,10 @@ class ViewController: UITableViewController {
         deleteLastNameButton.tintColor = UIColor.systemRed
         deleteMiddleNameButton.tintColor = UIColor.systemRed
         deleteNickNameButton.tintColor = UIColor.systemRed
+        addAddressButton.tintColor = UIColor.systemGreen
+        homeAddressDeleteButton.tintColor = UIColor.systemRed
+        workAddressDeleteButton.tintColor = UIColor.systemRed
+        alternateAddressDeleteButton.tintColor = UIColor.systemRed
     }
 //MARK:- Add Rows
     private func addRows(numOfRows: Int, section: Int) {
@@ -70,11 +82,10 @@ class ViewController: UITableViewController {
         addRows(numOfRows: numberOfRowsInSection1, section: 0)
     }
     @IBAction func addRowsSection2(_ sender: UIButton) {
-        numberOfRowsInSection2 += 1
-        let indexPath = IndexPath(row: numberOfSections, section: 0)
-        tableView.beginUpdates()
-        tableView.insertRows(at: [indexPath], with: .right)
-        tableView.endUpdates()
+        for row in 1...6 {
+            numberOfRowsInSection2 += 1
+            addRows(numOfRows: row, section: 1)
+        }
     }
     @IBAction func addRowsSection3(_ sender: UIButton) {
         numberOfRowsInSection3 += 1
@@ -109,10 +120,16 @@ class ViewController: UITableViewController {
         numberOfRowsInSection1 -= 1
         tableView.reloadData()
     }
-    
-    @IBAction func addSectionButtonPressed(_ sender: UIButton) {
-        numberOfSections += 1
+    //MARK:- Add Address
+    @IBAction func addAddressButtonPressed(_ sender: UIButton) {
+        
     }
+    
+    //MARK:- Delete Address
+    @IBAction func deleteAddressButtonPressed(_ sender: UIButton) {
+        
+    }
+
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
