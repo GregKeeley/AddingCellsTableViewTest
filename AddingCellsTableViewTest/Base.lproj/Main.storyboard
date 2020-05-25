@@ -31,19 +31,8 @@
                                                         <action selector="addRowsSection1:" destination="5st-bS-I4h" eventType="touchUpInside" id="2n1-3K-CkO"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wvo-8r-gX9">
-                                                    <rect key="frame" x="310" y="8" width="84" height="28"/>
-                                                    <state key="normal" title="Add Section"/>
-                                                    <connections>
-                                                        <action selector="addSectionButtonPressed:" destination="5st-bS-I4h" eventType="touchUpInside" id="JXs-Qv-259"/>
-                                                    </connections>
-                                                </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="wvo-8r-gX9" firstAttribute="top" secondItem="KhA-FJ-LtC" secondAttribute="top" constant="8" id="5Aa-M5-WyN"/>
-                                                <constraint firstAttribute="bottom" secondItem="wvo-8r-gX9" secondAttribute="bottom" constant="8" id="BRl-7K-rgX"/>
-                                                <constraint firstItem="wvo-8r-gX9" firstAttribute="centerY" secondItem="IGc-AK-3oK" secondAttribute="centerY" id="PfN-hQ-Gqf"/>
-                                                <constraint firstAttribute="trailing" secondItem="wvo-8r-gX9" secondAttribute="trailing" constant="20" id="VCl-22-OCI"/>
                                                 <constraint firstAttribute="bottom" secondItem="IGc-AK-3oK" secondAttribute="bottom" constant="8" id="XLM-fE-nhE"/>
                                                 <constraint firstItem="IGc-AK-3oK" firstAttribute="leading" secondItem="KhA-FJ-LtC" secondAttribute="leading" constant="20" id="gIg-BJ-9SY"/>
                                                 <constraint firstItem="IGc-AK-3oK" firstAttribute="top" secondItem="KhA-FJ-LtC" secondAttribute="top" constant="8" id="zPN-y2-aS9"/>
@@ -196,20 +185,9 @@
                                                         <action selector="addRowsSection2:" destination="5st-bS-I4h" eventType="touchUpInside" id="9H4-wd-flI"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hN8-Fy-FtV">
-                                                    <rect key="frame" x="310" y="8" width="84" height="28"/>
-                                                    <state key="normal" title="Add Section"/>
-                                                    <connections>
-                                                        <action selector="addSectionButtonPressed:" destination="5st-bS-I4h" eventType="touchUpInside" id="U3j-fu-4EV"/>
-                                                    </connections>
-                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="Je3-ZE-kPM" firstAttribute="leading" secondItem="xq7-dz-oYV" secondAttribute="leading" constant="20" id="Ejh-Xy-m8l"/>
-                                                <constraint firstAttribute="bottom" secondItem="hN8-Fy-FtV" secondAttribute="bottom" constant="8" id="UcE-J0-BKT"/>
-                                                <constraint firstItem="hN8-Fy-FtV" firstAttribute="top" secondItem="xq7-dz-oYV" secondAttribute="top" constant="8" id="fXW-7q-SID"/>
-                                                <constraint firstAttribute="trailing" secondItem="hN8-Fy-FtV" secondAttribute="trailing" constant="20" id="fg3-cl-psC"/>
-                                                <constraint firstItem="hN8-Fy-FtV" firstAttribute="centerY" secondItem="Je3-ZE-kPM" secondAttribute="centerY" id="kFc-gz-YbQ"/>
                                                 <constraint firstItem="Je3-ZE-kPM" firstAttribute="top" secondItem="xq7-dz-oYV" secondAttribute="top" constant="8" id="qJA-Cp-nlj"/>
                                                 <constraint firstAttribute="bottom" secondItem="Je3-ZE-kPM" secondAttribute="bottom" constant="8" id="rkl-Q8-Vaz"/>
                                             </constraints>
@@ -267,22 +245,11 @@
                                                         <action selector="addRowsSection3:" destination="5st-bS-I4h" eventType="touchUpInside" id="hei-gY-rRW"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NcI-ka-knM">
-                                                    <rect key="frame" x="310" y="8" width="84" height="28"/>
-                                                    <state key="normal" title="Add Section"/>
-                                                    <connections>
-                                                        <action selector="addSectionButtonPressed:" destination="5st-bS-I4h" eventType="touchUpInside" id="e7j-rV-I97"/>
-                                                    </connections>
-                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="i9J-G3-r5j" firstAttribute="leading" secondItem="lFk-w8-J0y" secondAttribute="leading" constant="20" id="5wE-Cm-YZI"/>
-                                                <constraint firstAttribute="bottom" secondItem="NcI-ka-knM" secondAttribute="bottom" constant="8" id="GM3-Yu-0xj"/>
-                                                <constraint firstItem="NcI-ka-knM" firstAttribute="centerY" secondItem="i9J-G3-r5j" secondAttribute="centerY" id="M2c-cJ-yhn"/>
-                                                <constraint firstAttribute="trailing" secondItem="NcI-ka-knM" secondAttribute="trailing" constant="20" id="TOc-nV-MAc"/>
                                                 <constraint firstItem="i9J-G3-r5j" firstAttribute="top" secondItem="lFk-w8-J0y" secondAttribute="top" constant="8" id="W1l-Jt-q9G"/>
                                                 <constraint firstAttribute="bottom" secondItem="i9J-G3-r5j" secondAttribute="bottom" constant="8" id="jOb-ON-vAC"/>
-                                                <constraint firstItem="NcI-ka-knM" firstAttribute="top" secondItem="lFk-w8-J0y" secondAttribute="top" constant="8" id="jtQ-Xl-5XC"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -338,22 +305,11 @@
                                                         <action selector="addRowsSection4:" destination="5st-bS-I4h" eventType="touchUpInside" id="XF5-9x-nb0"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXx-jv-o7E">
-                                                    <rect key="frame" x="310" y="8" width="84" height="28"/>
-                                                    <state key="normal" title="Add Section"/>
-                                                    <connections>
-                                                        <action selector="addSectionButtonPressed:" destination="5st-bS-I4h" eventType="touchUpInside" id="YSA-Fp-YKr"/>
-                                                    </connections>
-                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="hdd-1J-CMa" firstAttribute="top" secondItem="7oO-Zz-uFT" secondAttribute="top" constant="8" id="1j2-jv-1bs"/>
                                                 <constraint firstItem="hdd-1J-CMa" firstAttribute="leading" secondItem="7oO-Zz-uFT" secondAttribute="leading" constant="20" id="BYF-bo-3MF"/>
-                                                <constraint firstItem="bXx-jv-o7E" firstAttribute="centerY" secondItem="hdd-1J-CMa" secondAttribute="centerY" id="EMo-q5-uS5"/>
-                                                <constraint firstAttribute="trailing" secondItem="bXx-jv-o7E" secondAttribute="trailing" constant="20" id="gFR-B4-yvX"/>
-                                                <constraint firstAttribute="bottom" secondItem="bXx-jv-o7E" secondAttribute="bottom" constant="8" id="pfh-qh-KAW"/>
                                                 <constraint firstAttribute="bottom" secondItem="hdd-1J-CMa" secondAttribute="bottom" constant="8" id="wbN-AE-qrn"/>
-                                                <constraint firstItem="bXx-jv-o7E" firstAttribute="top" secondItem="7oO-Zz-uFT" secondAttribute="top" constant="8" id="xr5-dn-xO3"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
